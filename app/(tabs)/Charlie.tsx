@@ -1,106 +1,107 @@
 import { Image } from 'expo-image';
-import { Platform, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 
-import { Collapsible } from '@/components/ui/collapsible';
-import { ExternalLink } from '@/components/external-link';
 import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { IconSymbol } from '@/components/ui/icon-symbol';
+import { Collapsible } from '@/components/ui/collapsible';
 import { Fonts } from '@/constants/theme';
 
 export default function TabTwoScreen() {
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
-      headerImage={
-        <IconSymbol
-          size={310}
-          color="#808080"
-          name="chevron.left.forwardslash.chevron.right"
-          style={styles.headerImage}
-        />
-      }>
+     <ParallaxScrollView
+          headerBackgroundColor={{ light: '#337285', dark: '#f5f5f8' }}
+          headerImage={
+            <Image
+              source={require('@/assets/images/charlie-in-underworld-underworld-office.gif')}
+              style={styles.headerImage}
+              resizeMode="contain"
+            />
+          }>
       <ThemedView style={styles.titleContainer}>
         <ThemedText
           type="title"
           style={{
             fontFamily: Fonts.rounded,
           }}>
-          Explore
+Charlie
         </ThemedText>
       </ThemedView>
-      <ThemedText>This app includes example code to help you get started.</ThemedText>
-      <Collapsible title="History">
+      <ThemedText style={styles.centerText}>"Shut the f**k up!"</ThemedText>
+      <Collapsible title="Appearance">
         <ThemedText>
-          This app has two screens:{' '}
+          Charlie is an evil spirit of an unknown gender. Their body is completely black and shapeless. Large strands of unruly hair protrude from Charlies head. Their eyes are white with scattered tiny black pupils and are the most distinct part of Charlies body. The neck and abdominal area are jagged and a significant portion of Charlies abdomen is missing, save for a thin diagonal line that connects the upper and lower body. 
+          The right leg is also almost completely detached. As a human, Charlie has unruly dark brown hair and a peach skin tone. They are commonly depicted with an olive-green short-sleeved shirt with a purple collar and at the end of its sleeves. Their pants are a dark teal and as are their shoes. During their time as a mortal, Charlie often carried a pair of scissors.
+
+As a ghost, Charlie is almost completely white, save for some small black areas on their hands and face. As the plot progresses and more of Charlie’s memories resurface, more of Charlies body turns back to shadow starting with their arms.
+
+Unlike in the previous game, Charlies body is neither missing any parts nor have any areas distorted.
         </ThemedText>
-       
-        <ExternalLink href="https://docs.expo.dev/router/introduction">
-        </ExternalLink>
       </Collapsible>
-      <Collapsible title="Android, iOS, and web support">
+      <Collapsible title="Personality">
         <ThemedText>
-          You can open this project on Android, iOS, and the web. To open the web version, press{' '}
-          <ThemedText type="defaultSemiBold">w</ThemedText> in the terminal running this project.
+         As a mortal, Charlie was antisocial and very insecure. Charlie tended to keep their frustrations to themselves, often out of fear of being scolded by superiors or provoking a harsh response. This habit can make them come across as a little irritating at times.But what really defines Charlie is that, even while being aware of this side of themselves, they can’t bring themselves to unload those frustrations onto someone weaker or more vulnerable, like a child.
+          </ThemedText>
+          <ThemedText
+          type="title"
+          style={{
+            fontFamily: Fonts.rounded,
+          }}>
+Underworld Office
+      
         </ThemedText>
+         <ThemedText>
+        Charlie is a vengeful spirit who tries to maltreat people through nightmares in order to feel powerful. Eugene first finds Charlie in the subway attempting to cause multiple passengers a heart attack in their sleep.
+
+If Eugene chooses to release Charlie in Chapter 5, Charlie will express annoyance at being indebted to a "tiny bastard" and may enthusiastically return in Chapter 7 to help if Eugene decides to kill Jack. If Eugene hesitates, Charlie will scold them and become even more aggressive if Eugene shows pusillanimity, but will applaud them if they go for the kill.
+          </ThemedText>
+           <ThemedText
+          type="title"
+          style={{
+            fontFamily: Fonts.rounded,
+          }}>
+Charlie in Underworld
+      
+        </ThemedText>
+          <ThemedText>
+        Like Eugene in Underworld Office!, Charlie can have any personality that the player wants to give them, although many dialogue options suggest Charlie is cocky and often swears. They are also shown to be disrespectful towards others.
+
+At the beginning of the game, Charlie has no memories due to being sealed in Joan's cane during the events of Underworld Office!. As Charlie in Underworld progresses, Charlie's memories return and their shadows begin to reappear. By the end of the game, they are almost completely dark, except for a few tiny bright areas thanks to their regret over what happened during their mortal life with Mike and their mother.
+
+Based on Charlie’s memories as a human, Charlie wasn’t very sociable during their time as a mortal and preferred to cut out paper figures rather than talk to their classmates except for Mike, who approached them in a friendly manner even after “the incident”. Despite Charlie not behaving in a friendly manner in return, Charlie felt bad for what they did to Mike and always acknowledged their friend is a good person.
+          </ThemedText>
       </Collapsible>
       <Collapsible title="Images">
-        <ThemedText>
-          For static images, you can use the <ThemedText type="defaultSemiBold">@2x</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">@3x</ThemedText> suffixes to provide files for
-          different screen densities
-        </ThemedText>
         <Image
-          source={require('@/assets/images/react-logo.png')}
+          source={require('@/assets/images/503d1ee9fe22c5fe33d7f1cd8da4a3aa.jpg')}
           style={{ width: 100, height: 100, alignSelf: 'center' }}
         />
-        <ExternalLink href="https://reactnative.dev/docs/images">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
       </Collapsible>
-      <Collapsible title="Light and dark mode components">
         <ThemedText>
-          This template has light and dark mode support. The{' '}
-          <ThemedText type="defaultSemiBold">useColorScheme()</ThemedText> hook lets you inspect
-          what the user&apos;s current color scheme is, and so you can adjust UI colors accordingly.
+          {`Tap the Eugene tab to learn more about the secondary most important character.`}
         </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/develop/user-interface/color-themes/">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Animations">
-        <ThemedText>
-          This template includes an example of an animated component. The{' '}
-          <ThemedText type="defaultSemiBold">components/HelloWave.tsx</ThemedText> component uses
-          the powerful{' '}
-          <ThemedText type="defaultSemiBold" style={{ fontFamily: Fonts.mono }}>
-            react-native-reanimated
-          </ThemedText>{' '}
-          library to create a waving hand animation.
-        </ThemedText>
-        {Platform.select({
-          ios: (
-            <ThemedText>
-              The <ThemedText type="defaultSemiBold">components/ParallaxScrollView.tsx</ThemedText>{' '}
-              component provides a parallax effect for the header image.
-            </ThemedText>
-          ),
-        })}
-      </Collapsible>
     </ParallaxScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  headerImage: {
-    color: '#808080',
-    bottom: -90,
-    left: -35,
-    position: 'absolute',
+   headerImage: {
+    width: '100%',
+   height: '100%',
+    resizeMode: 'center',
   },
   titleContainer: {
-    flexDirection: 'row',
+    flexDirection: 'column',
+    alignItems: 'center',
     gap: 8,
+  },
+  centerText: {
+    textAlign: 'center',
+    fontSize: 18,
+    marginBottom: 8,
+  },
+  stepContainer: {
+    gap: 8,
+    marginBottom: 8,
   },
 });

@@ -1,5 +1,5 @@
 import { Image } from 'expo-image';
-import { Platform, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 import { HelloWave } from '@/components/hello-wave';
 import ParallaxScrollView from '@/components/parallax-scroll-view';
@@ -10,16 +10,17 @@ import { Link } from 'expo-router';
 export default function HomeScreen() {
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#337285', dark: '#1D3D47' }}
+      headerBackgroundColor={{ light: '#337285', dark: '#2d2766' }}
       headerImage={
         <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
+          source={require('@/assets/images/OIP.webp')}
+          style={styles.headerImage}
+          resizeMode="contain"
         />
       }>
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Charlie In Underworld </ThemedText>
-      </ThemedView>
+      </ThemedView> <HelloWave></HelloWave>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">History </ThemedText>
         <ThemedText>
@@ -69,11 +70,9 @@ const styles = StyleSheet.create({
     gap: 8,
     marginBottom: 8,
   },
-  reactLogo: {
-    height: 100,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
+  headerImage: {
+    width: '100%',
+   height: '100%',
+    resizeMode: 'center',
   },
 });
