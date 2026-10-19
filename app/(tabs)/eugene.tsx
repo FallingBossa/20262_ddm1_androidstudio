@@ -24,25 +24,22 @@ export default function TabTwoScreen() {
           style={{
             fontFamily: Fonts.rounded,
           }}>
-Charlie
+Eugene
         </ThemedText>
       </ThemedView>
-      <ThemedText style={styles.centerText}>"Shut the f**k up!"</ThemedText>
+      <ThemedText style={styles.centerText}>"I was a better person after I met you...! But that was all built on lies..!"</ThemedText>
       <Collapsible title="Appearance">
         <ThemedText>
-          Charlie is an evil spirit of an unknown gender. Their body is completely black and shapeless. Large strands of unruly hair protrude from Charlies head. Their eyes are white with scattered tiny black pupils and are the most distinct part of Charlies body. The neck and abdominal area are jagged and a significant portion of Charlies abdomen is missing, save for a thin diagonal line that connects the upper and lower body. 
-          The right leg is also almost completely detached. As a human, Charlie has unruly dark brown hair and a peach skin tone. They are commonly depicted with an olive-green short-sleeved shirt with a purple collar and at the end of its sleeves. Their pants are a dark teal and as are their shoes. During their time as a mortal, Charlie often carried a pair of scissors.
+          Eugene sports short, light brown hair, a long-sleeved black turtleneck under a white uniform shirt, along with black eyes and circular glasses
+      Eugene usually wears their station attendant uniform with their guardian flower in their chest pocket, although occasionally we see Eugene wear a black top alongside black leggings.
 
-As a ghost, Charlie is almost completely white, save for some small black areas on their hands and face. As the plot progresses and more of Charlie’s memories resurface, more of Charlies body turns back to shadow starting with their arms.
+As a ghost, Eugene has pink hair that lightens or dims depending on whether or not Hayden turns into an evil spirit. Eugene also wears a white top instead of his station uniform, alongside dark pink leggings.
 
-Unlike in the previous game, Charlies body is neither missing any parts nor have any areas distorted.
+After the events of Charlie In Underworld!, Eugene is seen wearing a blue shirt under their usual white uniform, paired along with blue leggings instead of their black, showing the change of time and growth of the character.
         </ThemedText>
       </Collapsible>
       <Collapsible title="Personality">
-        <ThemedText>
-         As a mortal, Charlie was antisocial and very insecure. Charlie tended to keep their frustrations to themselves, often out of fear of being scolded by superiors or provoking a harsh response. This habit can make them come across as a little irritating at times.But what really defines Charlie is that, even while being aware of this side of themselves, they can’t bring themselves to unload those frustrations onto someone weaker or more vulnerable, like a child.
-          </ThemedText>
-          <ThemedText
+        <ThemedText
           type="title"
           style={{
             fontFamily: Fonts.rounded,
@@ -51,10 +48,10 @@ Underworld Office
       
         </ThemedText>
          <ThemedText>
-        Charlie is a vengeful spirit who tries to maltreat people through nightmares in order to feel powerful. Eugene first finds Charlie in the subway attempting to cause multiple passengers a heart attack in their sleep.
+        In the beginning, Eugene is introverted, quiet, and extremely insecure about themselves. They hardly talk in public due to their shyness and fear of making a mistake, owing to their uncontrollable stuttering. It is implied that they oftentimes spend a whole day without having said a single word. However, they are shown to be caring for others and determined to be of help, although the motive depends on the player's choices.
 
-If Eugene chooses to release Charlie in Chapter 5, Charlie will express annoyance at being indebted to a "tiny bastard" and may enthusiastically return in Chapter 7 to help if Eugene decides to kill Jack. If Eugene hesitates, Charlie will scold them and become even more aggressive if Eugene shows pusillanimity, but will applaud them if they go for the kill.
-          </ThemedText>
+Eugene's personality can change all throughout the game. Depending on the player, Eugene can be empathic and selfless or direct and efficient. Their motivation in helping others can be either based on genuine care or simply a way to repay their debt to Boss. They also have the choice to be understanding of every situation they find themselves in or be quick to anger and resentment when things don't go their way.
+         </ThemedText>
            <ThemedText
           type="title"
           style={{
@@ -64,11 +61,15 @@ Charlie in Underworld
       
         </ThemedText>
           <ThemedText>
-        Like Eugene in Underworld Office!, Charlie can have any personality that the player wants to give them, although many dialogue options suggest Charlie is cocky and often swears. They are also shown to be disrespectful towards others.
+        Comparing Eugene's personality from the first and second games, a lot about Eugene has changed, the key difference being their relationship with Boss.
 
-At the beginning of the game, Charlie has no memories due to being sealed in Joan's cane during the events of Underworld Office!. As Charlie in Underworld progresses, Charlie's memories return and their shadows begin to reappear. By the end of the game, they are almost completely dark, except for a few tiny bright areas thanks to their regret over what happened during their mortal life with Mike and their mother.
+Eugene has now integrated talking into their daily life, seen by their interactions with the other station attendants. Eugene also smiles much more often to the point that it worries the other station attendants when Eugene stops smiling or when Eugene seems pretty out of it.
 
-Based on Charlie’s memories as a human, Charlie wasn’t very sociable during their time as a mortal and preferred to cut out paper figures rather than talk to their classmates except for Mike, who approached them in a friendly manner even after “the incident”. Despite Charlie not behaving in a friendly manner in return, Charlie felt bad for what they did to Mike and always acknowledged their friend is a good person.
+Eugene also seems to have mostly lost their stutter, although they still stutter when things don't go their way or when they are scared.
+
+Though, Eugene has become so dependent on Boss and his rules that they sometimes have tiny breakdowns when they realize they have broken a rule, an example being when Charlie mentions to Eugene that they didn’t tell Boss that they used their scissors, Eugene seemed pretty out of it for a while and kept on saying "huh".
+
+Eugene's following of Boss's rules even extends to them refusing to talk to Charlie, because Boss said "It would be better for everyone if Charlie stayed away from Eugene". Charlie describes it as Eugene becoming "Boss's cute little puppet" because sometimes Eugene doesn't even seem to act on their own accord and instead follows Boss's rules, with very few exceptions.
           </ThemedText>
       </Collapsible>
       <Collapsible title="Images">
@@ -78,7 +79,7 @@ Based on Charlie’s memories as a human, Charlie wasn’t very sociable during 
         />
       </Collapsible>
         <ThemedText>
-          {`Tap the Eugene tab to learn more about the secondary most important character.`}
+          {`Tap the Charlie tab to learn more about the main character.`}
         </ThemedText>
     </ParallaxScrollView>
   );
